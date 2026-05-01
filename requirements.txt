@@ -1,0 +1,8 @@
+click>=8.1
+rich>=13.0
+fastapi>=0.104
+uvicorn>=0.24
+PyYAML>=6.0
+Pillow>=10.0
+pydantic>=2.5
+python-multipart>=0.0.6

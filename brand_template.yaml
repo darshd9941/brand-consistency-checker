@@ -1,0 +1,60 @@
+# Brand Specification Template
+# Edit this file to match your brand guidelines, then run:
+#   brand-check check-image --spec brand_template.yaml --image logo.png
+#   brand-check check-text --spec brand_template.yaml --text "Your copy here"
+
+brand_name: "Acme Corp"
+
+# ── Color Palette ──────────────────────────────────────────────
+colors:
+  - name: "Primary Blue"
+    hex: "#0066CC"
+    pantone: "PMS 2935 C"
+    cmyk: "100, 50, 0, 0"
+  - name: "Dark Navy"
+    hex: "#1A1A2E"
+  - name: "Accent Gold"
+    hex: "#FFB800"
+    pantone: "PMS 116 C"
+  - name: "Light Gray"
+    hex: "#F5F5F5"
+  - name: "White"
+    hex: "#FFFFFF"
+
+# ── Typography Rules ───────────────────────────────────────────
+typography:
+  - font_family: "Inter"
+    allowed_sizes: [12, 14, 16, 20, 24, 32, 48]
+    allowed_weights: [400, 600, 700]
+  - font_family: "Georgia"
+    allowed_sizes: [16, 18, 20]
+    allowed_weights: [400, 700]
+
+# ── Logo Rules ─────────────────────────────────────────────────
+logo:
+  min_width_px: 120
+  min_height_px: 40
+  clear_space_ratio: 0.5
+  allowed_formats:
+    - PNG
+    - SVG
+
+# ── Voice & Tone ───────────────────────────────────────────────
+voice:
+  tone_keywords:
+    - professional
+    - friendly
+    - clear
+    - confident
+  banned_words:
+    - cheap
+    - guaranteed
+    - revolutionary
+    - hack
+    - insane
+    - crazy
+    - basically
+    - literally
+  max_sentence_length: 25
+  max_paragraph_length: 5
+  required_includes: []
