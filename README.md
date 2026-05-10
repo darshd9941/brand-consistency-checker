@@ -1,6 +1,8 @@
+﻿# brand-consistency-checker
+
 # Brand Consistency Checker
 
-**eslint for brand design** — validates AI-generated outputs against your brand rules.
+**eslint for brand design** â€” validates AI-generated outputs against your brand rules.
 
 AI tools produce content fast, but nobody checks if it matches your brand. This tool catches off-brand colors, banned words, wrong fonts, and tone violations before they ship.
 
@@ -191,4 +193,85 @@ voice:
 
 ## License
 
-MIT — see [LICENSE](LICENSE).
+MIT â€” see [LICENSE](LICENSE).
+
+
+## Installation
+
+### Prerequisites
+
+- Python 3.8 or higher
+- pip (Python package manager)
+
+### Clone the Repository
+
+```bash
+git clone https://github.com/darshd9941/brand-consistency-checker.git
+cd brand-consistency-checker
+```
+
+### Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### Environment Setup
+
+1. Copy the example environment file:
+   ```bash
+   cp .env.example .env
+   ```
+
+2. Edit .env and add your API keys:
+   ```bash
+   # Required for Claude vision features
+   ANTHROPIC_API_KEY=your-api-key-here
+   ```
+
+## Usage
+
+### Web App (if applicable)
+
+```bash
+streamlit run app.py
+```
+
+### CLI Usage
+
+```bash
+python main.py --help
+```
+
+### Python API
+
+```python
+from module import MainClass
+
+# Initialize the tool
+tool = MainClass()
+
+# Use the tool
+result = tool.process("input")
+print(result)
+```
+
+## Configuration
+
+- .env - Environment variables (API keys, settings)
+- config.yaml - Configuration file (if applicable)
+
+## Examples
+
+See the examples/ directory for detailed usage examples.
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
+
+## License
+
+See LICENSE file for details.
